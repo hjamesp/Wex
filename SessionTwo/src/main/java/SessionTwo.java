@@ -4,15 +4,14 @@
  * So that I can buy a book
  * 
  * Scenario: Searching the cheapest
- *	 	Given I navigate to ìwww.amazon.comî.
- * 		When I select the option ìBooksî in the dropdown next to the search text input criteria.
- * 		Then I search for ìTest automationî.
+ *	 	Given I navigate to ‚Äúwww.amazon.com‚Äù.
+ * 		When I select the option ‚ÄúBooks‚Äù in the dropdown next to the search text input criteria.
+ * 		Then I search for ‚ÄúTest automation‚Äù.
  * 		And I select the cheapest book of the page without using any sorting method available.
  * 		When I reach the detailed book page, I check if the name in the header is the same name of the book that I select previously.
  */
 
 import java.awt.List;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -45,7 +44,7 @@ public class SessionTwo {
 		combo.selectByValue("earch-alias=stripbooks-intl-ship");
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Test automation");
 		driver.findElement(By.xpath("//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']")).click();
-		driver.findElement(By.xpath("//span[contains(text(),'Test Automation †best practices: \"Won the Best Aut')]")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'Test Automation ¬†best practices: \"Won the Best Aut')]")).click();
 		Assert.assertEquals("Test Automation  best practices: \"Won the Best Automation Book Award in TestKit 2014\"", driver.findElement(By.xpath("//span[contains(text(),'Test Automation  best practices: \\\"Won the Best Automation Book Award in TestKit 2014\\\"')]")));
 	}
 
