@@ -10,6 +10,7 @@
  * 		And I press Ok
  * 		When the number is divisible by 3 
  * 		Then program will print "Cira".
+ 
  * Scenario: The number contain 5 in it
  * 		Given given that I enter a number
  * 		When that program ask for a number
@@ -17,6 +18,7 @@
  * 		And I press Ok
  * 		When the number contains 5 in it 
  * 		Then program will print "Dinha".
+ 
  * Scenario: The number is divisible by 3 and contain 5 in it
  * 		Given given that I enter a number
  * 		When that program ask for a number
@@ -24,6 +26,7 @@
  * 		And I press Ok
  * 		When the number is divisible by 3 and contains 5 in it 
  * 		Then program will print "CiraDinha".
+ 
  * Scenario: The number isn't divisible by 3 and don't contain 5 in it
  * 		Given given that I enter a number
  * 		When that program ask for a number
