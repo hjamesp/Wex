@@ -35,9 +35,6 @@ public class SessionTwo {
 	
 	@Test
 	public void testAutomation(){
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Bruno\\Documents\\WebDrivers\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.amazon.com");
 		WebElement element = driver.findElement(By.id("searchDropdownBox"));
 		driver.findElement(By.xpath("//*[@class='nav-search-scope nav-sprite']")).click();
 		Select combo = new Select(element);
